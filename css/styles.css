@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-inline: auto;
+  width: 90%;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 30px;
+  color: lightgray;
+  font-family: 'Roboto', sans-serif;
+}
+
+header,
+main,
+footer {
+  padding: 20px 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  color: #ffff00;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-link a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Search Form styles */
+form {
+  margin: 0 auto;
+}
+
+.search-type {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-type label {
+  margin-right: 15px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.search-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type='radio'] {
+  accent-color: #ffff00;
+  width: 15px;
+}
+
+input[type='submit'] {
+  color: #333;
+  background-color: #ffff00;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 20px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgb(186, 187, 188);
+  font-style: italic;
+}
+
+#movies,
+.series {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.section-title {
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #333;
+  min-width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
+}
+
+.card:hover {
+  background-color: #ffff00;
+  padding: 3px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form textarea {
+  width: 100%;
+  height: 80px;
+  padding: 8px 20px;
+  font-family: Roboto;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.send-btn {
+  font-style: italic;
+}
+
+/* Back button styles */
+.back-btn a {
+  text-decoration: none;
+  color: lightgray;
+  transition: all 1s ease-in-out;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 175px;
+  color: lightgray;
+  background-color: transparent;
+  font-size: 1.15em;
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 30px auto;
+}
+
+@media (min-width: 640px) {
+  body {
+    background-color: #333;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: darkgray;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: rgb(31, 31, 33);
+  }
+}

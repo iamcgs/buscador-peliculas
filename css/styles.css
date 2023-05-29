@@ -83,6 +83,7 @@ input[type='radio'] {
 input[type='submit'] {
   color: #333;
   background-color: #ffff00;
+  cursor: pointer;
 }
 
 form input {

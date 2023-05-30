@@ -266,8 +266,8 @@ footer {
 
 
 @media (min-width: 640px) {
-  body {
-    background-color: #333;
+  input[type='radio'] {
+  width: 15px;
   }
 }
 

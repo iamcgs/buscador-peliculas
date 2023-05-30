@@ -59,6 +59,7 @@ a:hover {
   cursor: pointer;
   color: rgb(244, 244, 0);
   text-shadow: 0 0 30px #fff;
+}
 
 /* Search Form styles */
 form {

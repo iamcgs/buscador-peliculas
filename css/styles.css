@@ -69,6 +69,12 @@ form {
   margin: 0 auto;
 }
 
+.search-form {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
 .search-type {
   display: flex;
   align-items: center;

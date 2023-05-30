@@ -46,10 +46,19 @@ nav ul {
   list-style-type: none;
 }
 
+
 .nav-link a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/*se agrego el efecto al menu*/
+a:hover {
+  color: #fbf600;
+  cursor: pointer;
+  color: rgb(244, 244, 0);
+  text-shadow: 0 0 30px #fff;
 }
 
 /* Search Form styles */
@@ -80,17 +89,22 @@ input[type='radio'] {
   width: 15px;
 }
 
+/*form contacto*/
+
 input[type='submit'] {
   color: #333;
   background-color: #ffff00;
-  cursor: pointer;
+}
+
+h2{
+  text-align: center;
 }
 
 form input {
   width: 100%;
   height: 40px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
   padding: 0 20px;
 }
@@ -99,7 +113,25 @@ form input::placeholder,
 form textarea::placeholder {
   color: rgb(186, 187, 188);
   font-style: italic;
+  border-radius: 10px;
 }
+
+.error-message {
+padding: 20px; 
+color: rgb(254, 92, 92);
+}
+
+.success{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.success img{
+  width: 24px;
+}
+
 
 #movies,
 .series {
@@ -156,10 +188,6 @@ form textarea {
   outline: none;
 }
 
-.send-btn {
-  font-style: italic;
-}
-
 /* Back button styles */
 .back-btn a {
   text-decoration: none;
@@ -187,7 +215,7 @@ form textarea {
 }
 
 .back-btn:hover {
-  transform: scale(1.02);
+ transform: scale(1.02);
 }
 
 /* Footer */
@@ -195,6 +223,21 @@ footer {
   text-align: center;
   margin: 30px auto;
 }
+
+
+/*#footer {
+  height:50px;
+  line-height:50px;
+  background:rgb#333;
+  color:white;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+} */
+
+
 
 @media (min-width: 640px) {
   body {

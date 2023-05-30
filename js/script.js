@@ -123,6 +123,7 @@ const getMovieDetails = async () => {
   movie.production_companies.forEach((prod) => production.push(prod.name));
 
   const div = document.createElement('div');
+  div.classList.add('movie-container');
 
   div.innerHTML = `
               <h3>${movie.title}</h3>
@@ -135,12 +136,20 @@ const getMovieDetails = async () => {
                  class=""
                  alt="${movie.title}"
                />
-               <h2><span>Título Original:</span> ${movie.original_title}</h2>
+               <h2><span class='item'>Título Original:</span> ${
+                 movie.original_title
+               }</h2>
                <p>${movie.overview}</p>
-               <p><span>Género:</span> ${genres.join(' | ')}</p>
-               <p><span>Duración:</span> ${movie.runtime} minutos</p>
-               <p><span>Producción:</span> ${production.join(' | ')}</p>
-               <p><span>Rating:</span> ${movie.vote_average.toFixed(1)} / 10</p>
+               <p><span class='item'>Género:</span> ${genres.join(' | ')}</p>
+               <p><span class='item'>Duración:</span> ${
+                 movie.runtime
+               } minutos</p>
+               <p><span class='item'>Producción:</span> ${production.join(
+                 ' | '
+               )}</p>
+               <p><span class='item'>Rating:</span> ${movie.vote_average.toFixed(
+                 1
+               )} / 10</p>
   `;
   movieDetails.appendChild(div);
 };
@@ -157,6 +166,7 @@ const getSerieDetails = async () => {
   serie.production_companies.forEach((prod) => production.push(prod.name));
 
   const div = document.createElement('div');
+  div.classList.add('serie-container');
 
   div.innerHTML = `
                  <h3>${serie.name}</h3>
@@ -169,11 +179,17 @@ const getSerieDetails = async () => {
                  class=""
                  alt="${serie.name}"
                />
-               <h2><span>Título Original:</span> ${serie.original_name}</h2>
+               <h2><span class='item'>Título Original:</span> ${
+                 serie.original_name
+               }</h2>
                <p>${serie.overview}</p>
-               <p><span>Género:</span> ${genres.join(' | ')}</p>
-               <p><span>Producción:</span> ${production.join(' | ')}</p>
-               <p><span>Rating:</span> ${serie.vote_average.toFixed(1)} / 10</p>
+               <p><span class='item'>Género:</span> ${genres.join(' | ')}</p>
+               <p><span class='item'>Producción:</span> ${production.join(
+                 ' | '
+               )}</p>
+               <p><span class='item'>Rating:</span> ${serie.vote_average.toFixed(
+                 1
+               )} / 10</p>
   `;
   serieDetails.appendChild(div);
 };

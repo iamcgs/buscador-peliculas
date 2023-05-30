@@ -221,10 +221,7 @@ html, body {
   height:100%;
 }
 
-#pagina {
-  position: relative;
-  min-height: 100%;
-}
+
 
 #contenido {
   padding-bottom:50px; 

@@ -61,6 +61,7 @@ a:hover {
   text-shadow: 0 0 30px #fff;
 }
 
+
 /* Search Form styles */
 form {
   margin: 0 auto;
@@ -167,6 +168,23 @@ color: rgb(254, 92, 92);
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+}
+
+/* detalle de series y peliculas*/
+.movie-container {
+
+} 
+
+.serie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
 }
 
 .contact-form {

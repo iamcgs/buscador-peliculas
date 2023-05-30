@@ -188,7 +188,8 @@ color: rgb(254, 92, 92);
 
 .movie-container img,
 .serie-container img {
-  padding: 20px 0;
+  width:100%;
+  margin: 20px 0;
   border-radius: 5px;
 }
 

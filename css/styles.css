@@ -189,9 +189,6 @@ color: rgb(254, 92, 92);
 .serie-container img {
   padding: 20px 0;
   border-radius: 5px;
-   box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
-  -moz-box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
 }
 
 .item {

@@ -215,6 +215,28 @@ footer {
   margin: 30px auto;
 }
 
+#pagina {
+  position: relative;
+  min-height: 100%;
+}
+
+#contenido {
+  padding-bottom:50px; 
+}
+
+#footer {
+  height:50px;
+  line-height:50px;
+  background:rgb#333;
+  color:white;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+
+
 @media (min-width: 640px) {
   body {
     background-color: #333;

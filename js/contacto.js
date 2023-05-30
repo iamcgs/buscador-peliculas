@@ -8,13 +8,15 @@ form.addEventListener('submit', function (event) {
   const email = document.getElementById('email').value;
   const mensaje = document.getElementById('message').value;
 
-
   if (nombre === '' || email === '' || mensaje === '') {
     error.innerHTML = 'Por favor, complete todos los campos.';
+    document.getElementById('contact-form').reset();
+    setTimeout(() => {
+      error.innerHTML = '';
+    }, 2000);
     return;
   }
 
-  document.getElementById('contact-form').reset();
   success.innerHTML = `<p>Mensaje enviado correctamente</p>
              <img
                src="https://icongr.am/entypo/check.svg?size=128&color=FFFF00"
@@ -23,5 +25,3 @@ form.addEventListener('submit', function (event) {
              />
          `;
 });
-
-

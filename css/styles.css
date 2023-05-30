@@ -89,7 +89,7 @@ form {
 
 input[type='radio'] {
   accent-color: #ffff00;
-  width: 5px;
+/*   width: 5px; */
 }
 
 /*form contacto*/

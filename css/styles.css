@@ -171,10 +171,7 @@ color: rgb(254, 92, 92);
 }
 
 /* detalle de series y peliculas*/
-.movie-container {
-
-} 
-
+.movie-container,
 .serie-container {
   display: flex;
   flex-direction: column;

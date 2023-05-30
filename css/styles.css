@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   padding: 30px;
   color: lightgray;
+  background-color: #333;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -87,7 +88,7 @@ form {
 
 input[type='radio'] {
   accent-color: #ffff00;
-  width: 15px;
+  width: 10px;
 }
 
 /*form contacto*/
@@ -186,6 +187,7 @@ color: rgb(254, 92, 92);
 
 .movie-container img,
 .serie-container img {
+  padding: 20px 0;
   border-radius: 5px;
    box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 3px 5px 16px -5px rgba(255, 255, 255, 0.25);

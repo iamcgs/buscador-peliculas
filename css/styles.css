@@ -46,11 +46,19 @@ nav ul {
   list-style-type: none;
 }
 
+
 .nav-link a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/*se agrego el efecto al menu*/
+a:hover {
+  color: #fbf600;
+  cursor: pointer;
+  color: rgb(244, 244, 0);
+  text-shadow: 0 0 30px #fff;
 
 /* Search Form styles */
 form {
